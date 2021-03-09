@@ -81,7 +81,7 @@ export default {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 200px 32px 0 32px;
+   margin: 160px 32px 0 32px;
    &-group {
      margin-bottom: 1rem;
    }
