@@ -107,7 +107,7 @@ export default {
 
   .card {
     width: 238px;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0,0,0,.12);
     border-radius: .25rem;
     margin: 16px;
     &-body {
