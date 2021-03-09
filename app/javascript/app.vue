@@ -1,5 +1,8 @@
 <template>
   <div id="app">
+    <header>
+      <h1 class="app-title">Memo App with Vue.js</h1>
+    </header>
     <div class="form">
       <div class="form-group">
         <input v-model="title" placeholder="title" class="form-control">
@@ -51,18 +54,34 @@ export default {
       .then(response => (
         this.setMemo()
       ));
+      this.title = '';
+      this.description = '';
     }
   }
 }
 </script>
 
 <style lang="scss" scoped>
+ header {
+   height: 100px;
+   width: 100%;
+   background-color: #222;
+   position: fixed;
+   top: 0;
+   left: 0;
+ }
+
+ .app-title {
+   color: aliceblue;
+   text-align: center;
+ }
+
   .form {
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   margin: 32px;
+   margin: 200px 32px 0 32px;
    &-group {
      margin-bottom: 1rem;
    }
@@ -77,6 +96,7 @@ export default {
 
   button {
     width: 200px;
+    cursor: pointer;
   }
 
   .flex {
