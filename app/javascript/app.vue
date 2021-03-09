@@ -66,7 +66,7 @@ export default {
    height: 100px;
    width: 100%;
    background-color: #222;
-   position: fixed;
+   position: absolute;
    top: 0;
    left: 0;
  }
